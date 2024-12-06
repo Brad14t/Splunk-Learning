@@ -76,11 +76,44 @@ Lookups allow you to add fields or values to events that arent a part of the dat
 Search times operation order when working with knowlege objects: Field Extractions, Field Aliases, Calculated Fields, Lookups, Event Types, and Tags
 
 
+# Scheduling Reports & Alerts
 
+Course Topics 
+* Creating and managing Scheduled Reports 
+* Creating and managing Alerts 
+* Using Alert Actions
 
+Course Objectives 
+Topic 1 – Creating a Scheduled Report 
+* Create a report 
+* Schedule a report 
+* Define a report's time range 
+* Define schedule priority 
+* Define schedule window 
+* Add a trigger condition 
 
+Topic 2 – Managing Reports 
+* View report settings 
+* Edit report permissions 
+* Enable report embedding 
 
+Topic 3 – Creating Alerts 
+* Save a search as an alert 
+* Define alert permissions 
+* Understand scheduled and real-time alert types 
+* Define alert trigger conditions 
 
+Topic 4 – Using Alert Actions 
+* Define actions that respond to trigger conditions 
+* Write results to a log event 
+* Output results to a lookup 
+* Output results to a telemetry endpoint 
+* Send an email containing search results 
+* Set up a webhook alert action 
+
+Topic 5 – Managing Alerts 
+* View alert settings 
+* Edit alert permissions
 
 
 
