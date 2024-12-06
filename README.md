@@ -15,6 +15,8 @@ Notes while learning Splunk
 `|erex [Field] fromfield=_raw examples= "examples"` searches data like field extractor 
 `| rex field=_raw "expression"` - use regular expressions to extract data
 
+# Using Fields 
+
 **Course Topics** 
 * What are Fields?
 
@@ -78,47 +80,78 @@ Search times operation order when working with knowlege objects: Field Extractio
 
 # Scheduling Reports & Alerts
 
-Course Topics 
+**Course Topics** 
 * Creating and managing Scheduled Reports 
 * Creating and managing Alerts 
 * Using Alert Actions
 
-Course Objectives 
-Topic 1 – Creating a Scheduled Report 
+**Course Objectives** 
+**Topic 1 – Creating a Scheduled Report**
 * Create a report 
 * Schedule a report 
-* Define a report's time range 
-* Define schedule priority 
-* Define schedule window 
+* Define a report's time range
+
+Time range is when you want the report to report on.
+
+* Define schedule priority
+
+This allows for less strain due to reports completing before moving to the next
+
+* Define schedule window
+
+This is the time in which the action could be performed
+
 * Add a trigger condition 
 
-Topic 2 – Managing Reports 
-* View report settings 
-* Edit report permissions 
-* Enable report embedding 
+Trigger condition is what is required for the trigger to activate
 
-Topic 3 – Creating Alerts 
-* Save a search as an alert 
-* Define alert permissions 
-* Understand scheduled and real-time alert types 
-* Define alert trigger conditions 
+**Topic 2 – Managing Reports** 
 
-Topic 4 – Using Alert Actions 
-* Define actions that respond to trigger conditions 
-* Write results to a log event 
-* Output results to a lookup 
-* Output results to a telemetry endpoint 
-* Send an email containing search results 
+* Enable report embedding
+
+This makes the report viewable to anyone who has access to web page
+
+**Topic 3 – Creating Alerts** 
+
+* Save a search as an alert
+
+You can save a search and it will alert when the trigger is alerted.
+
+* Define alert permissions
+
+When set to `Private` only I would have access. With `Shared in App` all users in app. 
+
+* Understand scheduled and real-time alert types
+
+Real time will run continuously.
+
+* Define alert trigger conditions
+
+You specify what needs to be going on to send the alert.
+
+**Topic 4 – Using Alert Actions** 
+
+* Define actions that respond to trigger conditions
+
+The action is what the response is to the alert.
+
+* Write results to a log event
+
+Sends log events to Splunk
+
+* Output results to a lookup
+
+Creates or edits a CSV table
+  
 * Set up a webhook alert action 
 
-Topic 5 – Managing Alerts 
-* View alert settings 
-* Edit alert permissions
+Webhook alert is setting it up so an app over the web can receive this alert like a help desk or support app
 
+# Visualizations
 
+Course Topics ▪ Formatting data using transforming commands ▪ Preparing data for use in visualizations ▪ Generating maps using geographic data ▪ Creating and customizing single value visualizations ▪ Visually formatting statistical tables
 
-
-
+Course Objectives Topic 1 – Formatting Commands ▪ The fields command ▪ The table command ▪ The dedup command ▪ The addtotals command ▪ The fieldformat command Topic 2 – Visualizing Data ▪ Explore visualization types ▪ Use transforming commands to order results into a data table: o top o rare o stats o chart o timechart o trendline ▪ Understand when to use different transforming commands Topic 3 – Generating Maps ▪ Explore geographic visualization types ▪ Use commands specific to geographic data o iplocation o geostats o geom ▪ Prepare data for use in a choropleth map
 
 
 
