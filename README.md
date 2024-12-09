@@ -6,7 +6,7 @@ Notes while learning Splunk
 **Commands Learned:**
 
 `| fields [field]` - add or removes fields from search
-* `| fields -[field]` - removes a field from search
+`| fields -[field]` - removes a field from search
 `| rename [field] as ["New Name"]`- renames a field
 
 `| eval [Old Name] = [New Name]/10/10` - calculate field values to a new temporary field, /10/10 (divides the field by 10 then 10 again.)
