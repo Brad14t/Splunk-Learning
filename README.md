@@ -310,12 +310,66 @@ For the date and time documentation visit: https://docs.splunk.com/Documentation
 
 `| timewrap 1w` = follows a timechart command adn compares, this coompares 1 week ago 
 
+# Statistical Processing
+
+**Course Topics**
+
+* What is a Data Series
+
+* Transforming Data
+
+* Statistical Aggregation with the stats Command
+  
+* Manipulating Data with eval
+  
+* Formatting Data
+
+**Course Objectives** 
+
+**Topic 1 – What is a Data Series**
+
+* Introduce data series
+
+A sequence of related data point inside a visulization.
+
+* Explore the difference between single-series, multi-series, and time series data series
+
+Single-Series: Related data points that review a single data category 
+
+Multi-Series: Related data points that review multiple data categories
+
+Time-Series: Single or multi series that compaires values over time.
+
+**Topic 2 – Transforming Data** 
+
+* Use the chart, timechart, top, and rare commands to transform events into data tables
+
+![1](https://github.com/user-attachments/assets/62cbfa6c-c924-4c11-828b-9eb30cd8e955)
+
+![1](https://github.com/user-attachments/assets/659713d8-ea92-4ab9-b3a7-bfa09012f1e8)
+
+![1](https://github.com/user-attachments/assets/a5a7a7fb-0fd9-449a-a3a0-953412ab2d48)
+
+**Topic 3 – Statistical Aggregation with the stats Command** 
+
+* Define aggregation 
+
+* Explore the stats command and eight of its functions 
+
+![1](https://github.com/user-attachments/assets/15b13481-4736-477f-9f42-0a0e162abb9b)
 
 
+**Topic 4 – Manipulating Data with eval Command** 
 
+* Explore the eval command 
+* Explore and perform calculations using mathematical and statistical eval functions 
+* Perform calculations and concatenations on field values 
+* Use the eval command as a function with the stats command 
 
+**Topic 5 – Formatting Data**
 
-
+* Use the rename command 
+* Use the sort command
 
 
 
