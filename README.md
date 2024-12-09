@@ -151,7 +151,37 @@ Webhook alert is setting it up so an app over the web can receive this alert lik
 
 Course Topics ▪ Formatting data using transforming commands ▪ Preparing data for use in visualizations ▪ Generating maps using geographic data ▪ Creating and customizing single value visualizations ▪ Visually formatting statistical tables
 
-Course Objectives Topic 1 – Formatting Commands ▪ The fields command ▪ The table command ▪ The dedup command ▪ The addtotals command ▪ The fieldformat command Topic 2 – Visualizing Data ▪ Explore visualization types ▪ Use transforming commands to order results into a data table: o top o rare o stats o chart o timechart o trendline ▪ Understand when to use different transforming commands Topic 3 – Generating Maps ▪ Explore geographic visualization types ▪ Use commands specific to geographic data o iplocation o geostats o geom ▪ Prepare data for use in a choropleth map
+Course Objectives 
+
+Topic 1 – Formatting Commands 
+▪ The fields command 
+
+`| fields`
+
+▪ The table command 
+
+`| table [column] [column2] [column3]`
+
+Outputs columns of your choice in a table.
+
+▪ The dedup command 
+
+`| dedup`
+
+Removes duplicate events.
+
+▪ The addtotals command 
+▪ The fieldformat command 
+
+Topic 2 – Visualizing Data 
+▪ Explore visualization types 
+▪ Use transforming commands to order results into a data table: o top o rare o stats o chart o timechart o trendline 
+▪ Understand when to use different transforming commands 
+
+Topic 3 – Generating Maps 
+▪ Explore geographic visualization types 
+▪ Use commands specific to geographic data o iplocation o geostats o geom 
+▪ Prepare data for use in a choropleth map
 
 
 
