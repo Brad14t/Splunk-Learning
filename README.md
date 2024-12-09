@@ -1,21 +1,6 @@
 # Splunk-Learning
 
-Notes while learning Splunk
-
-
-**Commands Learned:**
-
-`| fields [field]` - add or removes fields from search
-`| fields -[field]` - removes a field from search
-`| rename [field] as ["New Name"]`- renames a field
-
-`| eval [Old Name] = [New Name]/10/10` - calculate field values to a new temporary field, /10/10 (divides the field by 10 then 10 again.)
-
-`|erex`, `| rex` - extracts fields from data using Regex syntax
-
-`|erex [Field] fromfield=_raw examples= "examples"` searches data like field extractor 
-
-`| rex field=_raw "expression"` - use regular expressions to extract data
+Notes while learning Splunk for **Splunk Core Certified User**
 
 # Using Fields 
 
@@ -151,39 +136,156 @@ Webhook alert is setting it up so an app over the web can receive this alert lik
 
 # Visualizations
 
-Course Topics ▪ Formatting data using transforming commands ▪ Preparing data for use in visualizations ▪ Generating maps using geographic data ▪ Creating and customizing single value visualizations ▪ Visually formatting statistical tables
+**Course Topics** 
+* Formatting data using transforming commands 
+* Preparing data for use in visualizations 
+* Generating maps using geographic data 
+* Creating and customizing single value visualizations 
+* Visually formatting statistical tables
 
-Course Objectives 
+**Course Objectives** 
 
-Topic 1 – Formatting Commands 
-▪ The fields command 
+**Topic 1 – Formatting Commands **
+
+* The fields command 
 
 `| fields`
 
-▪ The table command 
+* The table command 
 
 `| table [column] [column2] [column3]`
 
 Outputs columns of your choice in a table.
 
-▪ The dedup command 
+* The dedup command 
 
-`| dedup`
+`| dedup [field]`
 
 Removes duplicate events.
 
-▪ The addtotals command 
-▪ The fieldformat command 
+* The addtotals command 
 
-Topic 2 – Visualizing Data 
-▪ Explore visualization types 
-▪ Use transforming commands to order results into a data table: o top o rare o stats o chart o timechart o trendline 
-▪ Understand when to use different transforming commands 
+`| addtotals col=true label="Toal Sales" labelfield="product_name" fieldname+"Total by Product"`
 
-Topic 3 – Generating Maps 
-▪ Explore geographic visualization types 
-▪ Use commands specific to geographic data o iplocation o geostats o geom 
-▪ Prepare data for use in a choropleth map
+adds the total of x and creates a column in `| chart`, Label is name of row, field is the field you are looking in and name is the column name
+
+* The fieldformat command 
+
+`| field format` - changes the look of a data field without changing the underlying data
+
+**Topic 2 – Visualizing Data** 
+
+* Explore visualization types 
+
+These are many different types of graphs. Usually requires tables to have 2 colomuns.
+
+* Use transforming commands to order results into a data table: 
+
+`| top` - Finds most common fields (Top 10),  `| top [field] limit=20` changes the shown results #.
+
+`| rare` - Same as top but opposite
+
+`| stats` - anything to do with counting and showing the results 
+
+`| chart` - charting data with visualization
+
+`| timechart` - stat aggrigation using time
+
+`| trendline` - can show data that has been tredning as of lately 
+
+* Command Clauses with transforming commands.
+
+`limit` = int
+
+`countfield` = string
+
+`percentfield` = string
+
+`showcount` = True/False
+
+`showperc` = True/False
+
+`showother` = True/False
+
+`otherstr`= string
+
+**Topic 3 – Generating Maps**
+
+* Explore geographic visualization types
+
+These are different graphs and maps
+
+* Use commands specific to geographic data
+`| iplocation` - will create fields of City, Country etc
+
+`| geostats latfield=[field] longfield=[field] count` - aggreigate data for use in a map. ( allows you to split data using a `by` argument.
+
+* Prepare data for use in a choropleth map
+
+You'll need a `.kmz` file (KeyHole Markeup Language)
+
+`| geom` - adds field that match polygons on the map.
+
+EX: 
+
+`| stats count as [New Name Column] by [field_1]`
+
+`| geom [.kmz file] featureIdField=[field_1]`
+
+# Working with Time
+
+**Course Topics** 
+
+* Searching with Time 
+* Formatting Time 
+* Comparing Index Time versus Search Time 
+* Using Time Commands 
+* Working with Time Zones
+
+**Course Objectives**
+
+**Topic 1 – Searching with Time**
+
+* Understand the _time field and timestamps
+
+When data is injested, the timestamp is listed under the field `_time`
+
+Timestamps are in `Unix` or `epoc` time, then translated into readable info.
+
+The timestamp is in your local timezone.
+
+* View and interact with the Event Timeline
+
+Choose your selected time range and select `Zoom to selection`
+
+* Use the earliest and latest time modifiers
+
+`earliest=[+ or -][timeint][timeunit]@[timeunit]`
+
+`latest=[+ or -][timeint][timeunit]@[timeunit]`
+
++ or - is forward or backwards in time
+
+timeint = the #
+
+timeunit = m = minute, h =hour, d = day, w = week, m = month
+
+* Use the bin command with the _time field 
+
+**Topic 2 – Formatting Time**
+
+* Use various date and time eval functions to format time 
+
+**Topic 3 – Using Time Commands**
+
+* Use the timechart command 
+* Use the timewrap command 
+
+**Topic 4 – Working with Time Zones**
+
+* Understand how time and timezones are represented in your data
+* Determine the time zone of your server 
+* Use strftime to correct timezones in results
 
 
 
