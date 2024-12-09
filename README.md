@@ -270,22 +270,47 @@ timeint = the #
 
 timeunit = m = minute, h =hour, d = day, w = week, m = month
 
-* Use the bin command with the _time field 
+EX:
+
+`-30m@h` = looks back `30 minutes` and snap back to the beginning of the `hour`
+
+earliest=-h@h = Rounds down to the hour.
+
+* Use the bin command with the _time field
+
+`| bin` essentially categorizes data
+
+`| bin span=1h _time` = each result will be an hour long span, then you add the data you choose,
+
+`| stats sum(field) as "Name of Coulmn" by _time` = this adds the fields and outputs the hourly amount.
+
+Next to make it readable use the `| eval` command
+
+`| eval [Name column] = strftime(_time, "%b %d, %I %p") 
+
+For the date and time documentation visit: https://docs.splunk.com/Documentation/Splunk/9.3.2/SearchReference/Commontimeformatvariables
 
 **Topic 2 – Formatting Time**
 
-* Use various date and time eval functions to format time 
+* Use various date and time eval functions to format time
+
+`| eval field1 = now()` = returns the time a search was started 
+
+`| eval field1 = time()` = returns the time an event was processed by eval command
+
+`| eval field1 = relative_time(X,Y)`
 
 **Topic 3 – Using Time Commands**
 
-* Use the timechart command 
-* Use the timewrap command 
+* Use the timechart command
 
-**Topic 4 – Working with Time Zones**
+`| timechart` = aggrigates data into a timed chart
 
-* Understand how time and timezones are represented in your data
-* Determine the time zone of your server 
-* Use strftime to correct timezones in results
+* Use the timewrap command
+
+`| timewrap 1w` = follows a timechart command adn compares, this coompares 1 week ago 
+
+
 
 
 
