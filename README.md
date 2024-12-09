@@ -12,7 +12,9 @@ Notes while learning Splunk
 `| eval [Old Name] = [New Name]/10/10` - calculate field values to a new temporary field, /10/10 (divides the field by 10 then 10 again.)
 
 `|erex`, `| rex` - extracts fields from data using Regex syntax
+
 `|erex [Field] fromfield=_raw examples= "examples"` searches data like field extractor 
+
 `| rex field=_raw "expression"` - use regular expressions to extract data
 
 # Using Fields 
