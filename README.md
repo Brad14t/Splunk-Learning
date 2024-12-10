@@ -354,22 +354,113 @@ Time-Series: Single or multi series that compaires values over time.
 
 * Define aggregation 
 
+Summarize event values to create a single value
+
 * Explore the stats command and eight of its functions 
 
 ![1](https://github.com/user-attachments/assets/15b13481-4736-477f-9f42-0a0e162abb9b)
 
+`| stats dc(field)` = (distinct count) returns a count of the unique values of given field 
+
+`| stats sum(field1)` `|rename sum(field1) as Newfield1` `| sort -Newfield1` = adds the sum of fields and splits it by hosts, rename column, sorts by the most visited (desending order)
+
+`min()` = lowest value in field
+
+`max()` = highest value
+
+`avg()` = average value
+
+`values() as "x"` = gives the values of a field
+
+`list() as "x"` = lists all values even duplicates
+
+**IN GENERAL**
+
+Use `| stats` command for a table.
+
+Use `| chart` and `| timechart` commands for visulizations.
 
 **Topic 4 – Manipulating Data with eval Command** 
 
-* Explore the eval command 
-* Explore and perform calculations using mathematical and statistical eval functions 
-* Perform calculations and concatenations on field values 
+* Explore the eval command
+
+![1](https://github.com/user-attachments/assets/e17a8b39-2c49-42dc-9d35-567f1a5a06ca)
+
+
+* Explore and perform calculations using mathematical and statistical eval functions
+
+![1](https://github.com/user-attachments/assets/15d8bf82-938a-4141-82e2-ea08962d72cb)
+
 * Use the eval command as a function with the stats command 
+
+`pow(x,y)` = Returns xto the power of y, (10, 2) = 100
+
+`round(x,y)` = Rounds x to y (10.34567,2) = 10.34
+
+`max(x, ...)` = Takes an arbritrary number of arguments and returns the maximum
+
+`min(x, ...)` = Takes an arbritrary number of arguments and returns the minimum
+
+`random()` = Takes no arguments and returns a random integer
 
 **Topic 5 – Formatting Data**
 
-* Use the rename command 
+* Use the rename command
+
+![1](https://github.com/user-attachments/assets/2ce618ea-f372-4d6d-8616-1f77ba1d5eea)
+
 * Use the sort command
+
+![1](https://github.com/user-attachments/assets/f388e4cb-5074-41d2-bc49-ea29972fc8fe)
+
+# Comparing Values
+
+**Course Topics** 
+
+* Using eval to Compare 
+* Filtering with where & Managing Missing Data
+
+**Course Objectives** 
+
+**Topic 1 – Using eval to Compare**
+
+* Explore the eval command
+  
+* Explain evaluation functions
+
+![1](https://github.com/user-attachments/assets/76636c6a-2150-47e5-aabd-b1dcf357e9c9)
+
+![1](https://github.com/user-attachments/assets/17eb8ce6-12ba-458c-95a7-c34cb4ae7c75)
+
+
+* Identify and use comparison, conditional, and text functions 
+* Normalize data with the case function 
+* Use the fieldformat command to format field values 
+
+**Topic 2 – Filtering with where & Managing Missing Data** 
+
+* Use the where command to filter results 
+* Use wildcards with the where command 
+* Filter fields with the information functions, isnull and isnotnull 
+* Manage missing data with the fillnull command
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
