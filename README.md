@@ -454,9 +454,37 @@ The `validate ()` function is similar to the `case ()` function, but instead of 
 ![1](https://github.com/user-attachments/assets/2996ec18-34db-4ec4-bdae-5fb4410f46e3)
 
 
+# Result Modification
 
+Course Topics 
 
+* Manipulating Output 
+* Modifying Result Sets 
+* Modifying Field Values 
+* Normalizing with eval 
 
+Course Objectives 
+
+Topic 1 – Manipulating Output 
+
+* Convert a 2-D table into a flat table with the untable command 
+* Convert a flat table into a 2-D table with the xyseries command 
+
+Topic 2 – Modifying Result Sets 
+
+* Append data to search results with the appendpipe command 
+* Calculate event statistics with the eventstats command 
+* Calculate "streaming" statistics with the streamstats command 
+
+Topic 3 – Modifying Field Values 
+
+* Understand the eval command 
+* Use conversion and text eval functions to modify field values 
+* Reformat fields with the foreach command 
+
+Topic 4 – Normalizing with eval 
+* Normalize data with eval functions 
+* Identify eval functions to use for data and field normalization
 
 
 
