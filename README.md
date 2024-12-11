@@ -432,17 +432,27 @@ Use `| chart` and `| timechart` commands for visulizations.
 
 ![1](https://github.com/user-attachments/assets/17eb8ce6-12ba-458c-95a7-c34cb4ae7c75)
 
+![1](https://github.com/user-attachments/assets/0a190509-03c4-45ec-bf03-6eb2cc74f150)
 
-* Identify and use comparison, conditional, and text functions 
-* Normalize data with the case function 
-* Use the fieldformat command to format field values 
 
-**Topic 2 – Filtering with where & Managing Missing Data** 
+The `validate ()` function is similar to the `case ()` function, but instead of figuring out if a statment is true, instead when a statment it false it returns an argument 
 
-* Use the where command to filter results 
-* Use wildcards with the where command 
-* Filter fields with the information functions, isnull and isnotnull 
-* Manage missing data with the fillnull command
+![1](https://github.com/user-attachments/assets/c3578a7c-4253-451a-a755-50732d8b98d7)
+
+![1](https://github.com/user-attachments/assets/0a32fe6e-debb-4978-83d2-91b6f6e0cae3)
+
+![1](https://github.com/user-attachments/assets/d5876031-73ea-4535-bcae-f841e0630fa5)
+
+* Identify and use comparison, conditional, and text functions
+
+![1](https://github.com/user-attachments/assets/6fbf4b25-2e13-4185-9900-bd39fcc5a1e2)
+
+![1](https://github.com/user-attachments/assets/eda602f3-68d7-4998-af21-d73cc2c4ecc6)
+
+![1](https://github.com/user-attachments/assets/26d9a55b-1bba-4a88-ae65-cebc8e661ea6)
+
+![1](https://github.com/user-attachments/assets/2996ec18-34db-4ec4-bdae-5fb4410f46e3)
+
 
 
 
