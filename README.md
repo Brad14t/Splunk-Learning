@@ -472,13 +472,32 @@ Topic 1 – Manipulating Output
 
 Topic 2 – Modifying Result Sets 
 
-* Append data to search results with the appendpipe command 
-* Calculate event statistics with the eventstats command 
-* Calculate "streaming" statistics with the streamstats command 
+* Append data to search results with the appendpipe command
+
+![1](https://github.com/user-attachments/assets/2c21349c-d094-4f47-a1a2-cb570bab4bdb)
+
+![1](https://github.com/user-attachments/assets/4abd548e-1e28-4cb9-ac8a-0bffa8764709)
+
+* Calculate event statistics with the eventstats command
+
+![1](https://github.com/user-attachments/assets/799513c6-30dd-4b50-a5b9-7dff80eb4cd3)
+
+* Calculate "streaming" statistics with the streamstats command
+  
+![1](https://github.com/user-attachments/assets/fd5898f8-49b0-4870-b7dd-668ae23ca2a6)
+
+![1](https://github.com/user-attachments/assets/72750c40-ead8-4fdc-ae22-7b870d486514)
+
+`| xyseries <name Y column>, <X Row>, <field>`
 
 Topic 3 – Modifying Field Values 
 
-* Understand the eval command 
+* Understand the eval command
+
+`| foreach <field1, field2, field3>` [template]
+
+![1](https://github.com/user-attachments/assets/741a7e41-13a8-44e9-b12d-a4b10bc28526)
+
 * Use conversion and text eval functions to modify field values 
 * Reformat fields with the foreach command 
 
