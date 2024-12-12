@@ -498,7 +498,16 @@ Topic 3 – Modifying Field Values
 
 ![1](https://github.com/user-attachments/assets/741a7e41-13a8-44e9-b12d-a4b10bc28526)
 
-* Use conversion and text eval functions to modify field values 
+* Use conversion and text eval functions to modify field values
+
+`upper()`, `lower()` = upper or lowercase a field
+
+`substring()` = returns a selection of a string
+
+`coalesce()` = take a listr of arguments and returns the first value thats not null.
+
+![1](https://github.com/user-attachments/assets/23b8de7f-ef64-4089-80a7-1368c869b670)
+
 * Reformat fields with the foreach command 
 
 Topic 4 – Normalizing with eval 
