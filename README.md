@@ -513,33 +513,49 @@ Topic 3 – Modifying Field Values
 
 Course Topics 
 
-▪ Using Lookup Commands 
-▪ Adding aSubsearch 
-▪ Using the return Command
+* Using Lookup Commands 
+* Adding aSubsearch 
+* Using the return Command
 
 Course Objectives 
 
 Topic 1– Using Lookup Commands 
 
-▪ Understand lookups 
-▪ Usetheinputlookup command to search lookup files 
-▪ Usethelookup command toinvoke field value lookups 
-▪ Usetheoutputlookup command to create lookups 
-▪ Invoke geospatial lookups in search 
+* Understand lookups 
+
+Lookups allow for adding fields and values not included in the indexer
+
+By default there are 4 types of lookups.
+
+`File` - fields pulled from files like a .csv file
+
+`External` - appends the data using scripts (Python) or executables
+
+`KV Store` - Look up pairs from a KV storage
+
+`Geospacial` - add geographic locationb using a `.kmz` or `.kml` file
+
+* Searchtime sequence: Field Extractions -> Filed Aliases -> Calculated Fields -> Lookups -> Event Types -> Tags
+
+* Usetheinputlookup command to search lookup files 
+
+`| lookup <field> <input> as <new name> OUTPUT <new field1, new field2>`
+
+![1](https://github.com/user-attachments/assets/d00249b1-92ee-40cb-b5ba-de495520be46)
 
 Topic 2– Adding a Subsearch 
 
-▪ Define subsearch 
-▪ Usesubsearch to filter results 
-▪ Identify when to use subsearch 
-▪ Understand subsearch limitations and alternatives 
+* Define subsearch 
+* Usesubsearch to filter results 
+* Identify when to use subsearch 
+* Understand subsearch limitations and alternatives 
 
 Topic 3– Using the return Command 
 
-▪ Usethereturn command to pass values from a subsearch 
-▪ Comparethereturn and fields commands
+* Usethereturn command to pass values from a subsearch 
+* Comparethereturn and fields commands
 
-
+# Intro to Knowledge Objects
 
 
 
