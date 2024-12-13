@@ -508,14 +508,36 @@ Topic 3 – Modifying Field Values
 
 ![1](https://github.com/user-attachments/assets/23b8de7f-ef64-4089-80a7-1368c869b670)
 
-* Reformat fields with the foreach command 
 
-Topic 4 – Normalizing with eval 
-* Normalize data with eval functions 
-* Identify eval functions to use for data and field normalization
+# Leveraging Lookups and Subsearches
 
+Course Topics 
 
+▪ Using Lookup Commands 
+▪ Adding aSubsearch 
+▪ Using the return Command
 
+Course Objectives 
+
+Topic 1– Using Lookup Commands 
+
+▪ Understand lookups 
+▪ Usetheinputlookup command to search lookup files 
+▪ Usethelookup command toinvoke field value lookups 
+▪ Usetheoutputlookup command to create lookups 
+▪ Invoke geospatial lookups in search 
+
+Topic 2– Adding a Subsearch 
+
+▪ Define subsearch 
+▪ Usesubsearch to filter results 
+▪ Identify when to use subsearch 
+▪ Understand subsearch limitations and alternatives 
+
+Topic 3– Using the return Command 
+
+▪ Usethereturn command to pass values from a subsearch 
+▪ Comparethereturn and fields commands
 
 
 
