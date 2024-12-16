@@ -2,6 +2,17 @@
 
 Notes while learning Splunk for **Splunk Core Certified User**
 
+**Courses:**
+
+* Intro to Splunk
+* Using Fields
+* Scheduling Reports and Alerts
+* Visualizations
+* Working with Time
+* Statistical Processing
+* Leveraging Lookups and Subsearches
+* Search Optimization
+
 # Using Fields 
 
 **Course Topics** 
@@ -625,13 +636,6 @@ Recommended to use 6 keys: group, type, platform, category, time, and descriptio
 * Define role-based permissions for knowledge objects
 
 There are 3 main types: Private (default)(User created), Specific App (Power and Admin user), and All Apps (Admin User)
-
-
-
-
-
-
-
 
 
 
