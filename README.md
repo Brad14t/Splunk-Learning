@@ -557,7 +557,74 @@ Topic 3– Using the return Command
 
 # Intro to Knowledge Objects
 
+Course Topics 
 
+* Using knowledge objects to discover and analyze data 
+* Developing naming conventions for knowledge objects 
+* Defining permissions for knowledge objects 
+* Managing knowledge objects
+
+Topic 1 – What are Knowledge Objects? 
+
+* Understand the different types of knowledge objects: 
+
+* Fields
+
+The resulting extracted data from a search
+
+* Field extractions
+
+Most fields are automaticly extracted on search, but you can find more manually.
+
+* Field aliases
+
+Normalize data by adding alternate names to multiple fields.
+
+* Calculated fields
+
+Fields completing a calculation from a eval command
+
+* Lookups
+
+Data fields not found in current data.
+
+* Event types
+
+A way to save popular or oftenly used searches.
+
+* Tags
+
+Labels for the data.
+
+* Workflow actions
+
+Uses HTTP GET and POST methods to past info to external sources, or return info to Splunk.
+
+* Reports
+
+Another way to save your search.
+
+* Alerts
+
+A way to be notified, or perform an action due to a specific incident, set by you.
+
+* Macros
+
+Search strings or (commands) that can be used in multiple places.
+
+* Data models
+
+Hierarchal structured data sets you can adjust in Pivot (users explore the data)
+
+Topic 2 – Knowledge Object Settings 
+
+* Define naming conventions
+
+Recommended to use 6 keys: group, type, platform, category, time, and description.
+
+* Define role-based permissions for knowledge objects
+
+There are 3 main types: Private (default)(User created), Specific App (Power and Admin user), and All Apps (Admin User)
 
 
 
