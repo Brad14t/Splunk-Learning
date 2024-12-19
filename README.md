@@ -2,6 +2,30 @@
 
 Notes while learning Splunk for **Splunk Core Certified User**
 
+# Description
+
+I am currently studying to take the Splunk Core Certified User exam, but in general I am studying this to improve my skills in Network analytics and potentially get me a job in a SOC enviorment. If anyone is in the same boat, below I am listing all the important things I am looking at daily to study. I will try to provide all the information I am injesting, to hopefully pass the exam and pass this knowlege to the next.
+
+# Material Used
+
+* Splunk Free Learning Course's
+
+https://www.splunk.com/en_us/training/free-courses/overview.html
+
+* Splunk Test Blueprint
+
+https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-user.pdf
+
+* (Udemy) The Complete Splunk Core Certified User Course - SPLK-1001
+
+![1](https://github.com/user-attachments/assets/c185c2bf-ca58-4caf-9ede-5b49e9795dd7)
+
+* Brainscape (Self made flash cards)
+
+* Quizlet (Practice test and flashcards)
+
+https://quizlet.com/350611828/splunk-core-certified-user-flash-cards/?funnelUUID=4e320c6b-f888-40a4-b0e9-e7d16a5f53bb
+
 **Courses:**
 
 * Intro to Splunk
@@ -636,6 +660,41 @@ Recommended to use 6 keys: group, type, platform, category, time, and descriptio
 * Define role-based permissions for knowledge objects
 
 There are 3 main types: Private (default)(User created), Specific App (Power and Admin user), and All Apps (Admin User)
+
+
+# Splunk: Zero to Power User
+
+
+**Module 2:**
+
+Components of Splunk:
+
+* `Forwarder` - Sender of data, lives on the machine, feeds raw data to indexer 
+
+* `Indexer` - Processes data, stores events
+
+* `Search Head` - Executes the searches, interfface for searching indexers, craft SPL
+
+Types of installations of Splunk:
+
+* `Standalone` - single instance, or all in one. (Downloading splunk on your computer)
+
+* `Basic` - use forwarders on remote machine
+
+* `Multi-Instance` - seperation of the search head, forwarders and indexers
+
+* `Clustering` - or having a 1 for 1 replica search heads and a minimum of 3 search heads (use `Deployer` to manage cluster). Same with indexers, replicates mean if 1 goes down the others have the data.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
