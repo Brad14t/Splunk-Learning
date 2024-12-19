@@ -26,6 +26,8 @@ https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-user.pdf
 
 https://quizlet.com/350611828/splunk-core-certified-user-flash-cards/?funnelUUID=4e320c6b-f888-40a4-b0e9-e7d16a5f53bb
 
+https://quizlet.com/833938908/splunk-core-certified-user-practice-test-2-flash-cards/
+
 **Courses:**
 
 * Intro to Splunk
