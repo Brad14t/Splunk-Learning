@@ -688,10 +688,17 @@ Types of installations of Splunk:
 * `Clustering` - or having a 1 for 1 replica search heads and a minimum of 3 search heads (use `Deployer` to manage cluster). Same with indexers, replicates mean if 1 goes down the others have the data.
 
 
+**Module 6:**
 
+Data Pipeline:
 
+* Input - Forwarders Data=streams
 
+* Parsing - Processing of data Data=events
 
+* License Usage - license meter check
+
+* Indexing - Data is written to disk Data=compressed
 
 
 
