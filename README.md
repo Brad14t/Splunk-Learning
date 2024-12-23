@@ -38,6 +38,8 @@ https://quizlet.com/833938908/splunk-core-certified-user-practice-test-2-flash-c
 
 `Ctrl` + `Shift` + `z` = Expanded search (good for macros)
 
+# Splunk Free Learning Course'
+
 **Courses:**
 
 * Intro to Splunk
@@ -49,7 +51,7 @@ https://quizlet.com/833938908/splunk-core-certified-user-practice-test-2-flash-c
 * Leveraging Lookups and Subsearches
 * Search Optimization
 
-# Using Fields 
+**Using Fields**
 
 **Course Topics** 
 * What are Fields?
