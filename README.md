@@ -28,6 +28,16 @@ https://quizlet.com/350611828/splunk-core-certified-user-flash-cards/?funnelUUID
 
 https://quizlet.com/833938908/splunk-core-certified-user-practice-test-2-flash-cards/
 
+# Keyboard Shortcuts:
+
+`Shift` + `Enter` = A new line 
+
+`Ctrl` + `\` = Auto format search
+
+`Ctrl` + `z` = Go back steps in search
+
+`Ctrl` + `Shift` + `z` = Expanded search (good for macros)
+
 **Courses:**
 
 * Intro to Splunk
