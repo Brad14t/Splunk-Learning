@@ -688,7 +688,7 @@ Types of installations of Splunk:
 * `Clustering` - or having a 1 for 1 replica search heads and a minimum of 3 search heads (use `Deployer` to manage cluster). Same with indexers, replicates mean if 1 goes down the others have the data.
 
 
-**Module 6:**
+**Module 4A:**
 
 Data Pipeline:
 
@@ -700,10 +700,84 @@ Data Pipeline:
 
 * Indexing - Data is written to disk Data=compressed
 
+**Module 4C:**
+
+An App:
+
+* An App is something with a gui, something you have to launch. (Adds a new front point)
+
+Examples:
+
+* AWS
+* Azure
+* Corelight
+
+An Add-On:
+
+* Something that runs in the background, workstation view doesnt change.
+
+Examples:
+
+* CrowdStrike
+* Juniper
+* Unix and Linux
+* Palo Alto
 
 
+**Module 6: Knowledge Objects**
+
+What are knowledge objects?
+
+* Tools and useful things to take advantage when investigating.
+* All Knowlege Objects are sharable 
+
+Examples:
+
+* Build an alert when you hit 50 sales.
+* Create a tag to turn green when a user is logged in.
 
 
+Who manages the knowlegde objects?
+
+* Knowlege Manager (person who provides centeralized managment of all KO's)
+
+Best practice for naming conventions:
+
+* <Group name>_<type>_<descriptionz>
+
+Permissions are important for KO's
+
+Types:
+
+* `Private` - Only the creator can use or edit
+* `This app only` - Object presist on the context of an app
+* `All Apps` - Object presists globally
+
+**Module 7: Fields**
+
+* `Field names` are case sensitive
+* `Field values` are NOT case sensitive
+
+* `a` - next to the field means its alphanumeric
+* `#` - shows its numeric
+
+
+**Module 8A:**
+
+Splunk Colors and Syntax:
+
+* `Orange` - Command modifiers (Boolens, as, by)
+* `Blue` - The commands (stats, table, rename)
+* `Green` - The Arguments (limit, span)
+* `Purple` - The Functions (Tostring, sum, values, min, max)
+
+* `Splunk SPL`: Search Processing Language
+
+* `table` - Makes a table from searches 
+* `rename` - rename fields
+* `fields` - call on fields you want to include or exclude
+* `dedub` - removes duplicates
+* `sort` - sorts results
 
 
 
