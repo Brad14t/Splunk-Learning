@@ -816,6 +816,17 @@ Next is using the `fields` command to remove the status.
 ![Screenshot 2024-12-23 135553](https://github.com/user-attachments/assets/05a16967-4074-414d-a270-01565c9b1204)
 
 
+**Module 9A**
+
+Transforming commands
+
+* Search command that transforms each cell value into a numerical value splunk can use
+
+Types of transformitive commands:
+
+* Top - Finds the top 10 results by default
+* Rare - Finds the least common field values, 10 by default
+* Stats - calculates statistics
 
 
 
