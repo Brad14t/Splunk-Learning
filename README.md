@@ -825,8 +825,48 @@ Transforming commands
 Types of transformitive commands:
 
 * Top - Finds the top 10 results by default
+
+![Screenshot 2024-12-23 140528](https://github.com/user-attachments/assets/cb8db527-23f3-486a-b712-d67328351dee)
+![Screenshot 2024-12-23 140542](https://github.com/user-attachments/assets/695fc5fd-52b4-4d4c-b53e-ee684e8c93e5)
+
 * Rare - Finds the least common field values, 10 by default
 * Stats - calculates statistics
+
+**Module 10A**
+
+Transaction command
+
+* Events can be grouped into transactions
+* Can be very taxing on enviorment if not done correctly
+
+Types of Transaction commands:
+
+* `maxspan` - max time between all related events
+* `maxpause` - Max time between each event
+* `startswith` & `endswith` - Set your variables like time Ex: startswith=4624 ebdswith=4625
+
+Difference between `stats` & `transaction`
+
+* Stats is faster and more efficent
+* Transaction is better when being granular in investigation, stats is more for larger pools of events
+
+Transaction Ex:
+
+![Screenshot 2024-12-23 142501](https://github.com/user-attachments/assets/cf176023-fa50-4036-8de3-1a687b8fc654)
+
+This search: `index=web | transaction maxspan=10m maxpause=3s`
+
+Returns each group of values is no more than 10 minutes long and any consecutive events that happen no more than 3 seconds apart.
+
+
+
+
+
+
+
+
+
+
 
 
 
