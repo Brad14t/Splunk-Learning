@@ -114,7 +114,7 @@ Lookups allow you to add fields or values to events that arent a part of the dat
 Search times operation order when working with knowlege objects: Field Extractions, Field Aliases, Calculated Fields, Lookups, Event Types, and Tags
 
 
-# Scheduling Reports & Alerts
+**Scheduling Reports & Alerts**
 
 **Course Topics** 
 * Creating and managing Scheduled Reports 
@@ -183,7 +183,7 @@ Creates or edits a CSV table
 
 Webhook alert is setting it up so an app over the web can receive this alert like a help desk or support app
 
-# Visualizations
+**Visualizations**
 
 **Course Topics** 
 * Formatting data using transforming commands 
@@ -281,7 +281,7 @@ EX:
 
 `| geom [.kmz file] featureIdField=[field_1]`
 
-# Working with Time
+**Working with Time**
 
 **Course Topics** 
 
@@ -359,7 +359,7 @@ For the date and time documentation visit: https://docs.splunk.com/Documentation
 
 `| timewrap 1w` = follows a timechart command adn compares, this coompares 1 week ago 
 
-# Statistical Processing
+**Statistical Processing**
 
 **Course Topics**
 
@@ -462,7 +462,7 @@ Use `| chart` and `| timechart` commands for visulizations.
 
 ![1](https://github.com/user-attachments/assets/f388e4cb-5074-41d2-bc49-ea29972fc8fe)
 
-# Comparing Values
+**Comparing Values**
 
 **Course Topics** 
 
@@ -503,7 +503,7 @@ The `validate ()` function is similar to the `case ()` function, but instead of 
 ![1](https://github.com/user-attachments/assets/2996ec18-34db-4ec4-bdae-5fb4410f46e3)
 
 
-# Result Modification
+**Result Modification**
 
 Course Topics 
 
@@ -558,7 +558,7 @@ Topic 3 – Modifying Field Values
 ![1](https://github.com/user-attachments/assets/23b8de7f-ef64-4089-80a7-1368c869b670)
 
 
-# Leveraging Lookups and Subsearches
+**Leveraging Lookups and Subsearches**
 
 Course Topics 
 
@@ -604,7 +604,7 @@ Topic 3– Using the return Command
 * Usethereturn command to pass values from a subsearch 
 * Comparethereturn and fields commands
 
-# Intro to Knowledge Objects
+**Intro to Knowledge Objects**
 
 Course Topics 
 
