@@ -792,4 +792,33 @@ Splunk Colors and Syntax:
 * `sort` - sorts results
 
 
+**Search process**
+
+
+I start with a search with my given `index=web` and pick out my fields I want in the table.
+
+I then search `index=web | table clientip, action, categoryId, status`
+
+![Screenshot 2024-12-23 134009](https://github.com/user-attachments/assets/14379ec6-a2b8-4d26-afc3-cf72b2764e0d)
+
+But there are `null` values in the action and field, to remove these from the search I include the `where isnotnull(action)` command to remove the values with null fields.
+
+![Screenshot 2024-12-23 134745](https://github.com/user-attachments/assets/2580e9ac-a36b-4aff-afe1-b3b6fc6f4528)
+
+Then to rename some fields to make it look better I use the `rename` command.
+
+`| rename action as "Action", clientip as "Shoppers IP"`
+
+![Screenshot 2024-12-23 135419](https://github.com/user-attachments/assets/fa9bf3fe-167d-4351-a14a-a8020e19a04e)
+
+Next is using the `fields` command to remove the status.
+
+![Screenshot 2024-12-23 135553](https://github.com/user-attachments/assets/05a16967-4074-414d-a270-01565c9b1204)
+
+
+
+
+
+
+
 
