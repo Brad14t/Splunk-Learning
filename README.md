@@ -858,11 +858,15 @@ This search: `index=web | transaction maxspan=10m maxpause=3s`
 
 Returns each group of values is no more than 10 minutes long and any consecutive events that happen no more than 3 seconds apart.
 
+**Module 11A Manipulating Data**
 
+* `eval` - calculates fields, writes to a new or existing field. (Doesnt change underlying data, jyst calculates it)
 
+* `where` - similar to eval, uses boolean operators to search results, only shows the results that are true, when using `""` it searches field values, and `''` to search field names.
 
-
-
+Good for compairing values, cant be used before the first | in the search
+  
+* `search` -  Used when looking for key words or wildcards. You can use `search` anywhere in the SPL search
 
 
 
