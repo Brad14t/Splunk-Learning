@@ -953,6 +953,35 @@ Commands:
 * `addtotals` - add multiple values together on a chart (`Fieldname`, `label`, `labelfield`)
 * `trendline` - Overlay on a chart to show moving average (`sma`, `ema`, `wma`)
 
+**Module 16 Reports & Drilldowns**
+
+What are reports?
+
+* Anything you can craft into a search can be saved as report
+
+What are Drilldowns?
+
+* Functionality in a dashboard, after you have a search saved to panel you can drilldown on an event. `Tokens` are used for passing variables from panel to panel (setting inputs for users)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
