@@ -944,8 +944,14 @@ Ways to get visulizations:
 * `Search Commands` - Use a transforming command like timechart or stats, to summarize the data.
 
 
+**Module 15A Visualizations Pt 2**
 
+Commands:
 
+* `iplocation` - add location to visualizations
+* `geostats` - calculate functions to display on a cluster map (`latfield`, `longfield`, `globallimit`, `locallimit`)
+* `addtotals` - add multiple values together on a chart (`Fieldname`, `label`, `labelfield`)
+* `trendline` - Overlay on a chart to show moving average (`sma`, `ema`, `wma`)
 
 
 
