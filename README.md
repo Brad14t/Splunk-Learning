@@ -28,6 +28,10 @@ https://quizlet.com/350611828/splunk-core-certified-user-flash-cards/?funnelUUID
 
 https://quizlet.com/833938908/splunk-core-certified-user-practice-test-2-flash-cards/
 
+* Regex builder and tester
+
+https://regex101.com/
+
 # Keyboard Shortcuts:
 
 `Shift` + `Enter` = A new line 
@@ -868,7 +872,76 @@ Good for compairing values, cant be used before the first | in the search
   
 * `search` -  Used when looking for key words or wildcards. You can use `search` anywhere in the SPL search
 
+**Module 12A Fields Part 2**
 
+Field Extraction Methods:
+
+* Regex - Unstructured data
+* Delimiters - When splunk can easily determin after a delimiter ( ,:)
+  
+* Commands: 
+
+* `erex` - provide examples of what you what injested 
+* `rex` - create a new field out of an existing field using `regex`
+
+There are 3 ways to export new fields
+
+`rex` Example:
+
+How to search `_raw` with `regex`
+
+`| rex field=_raw (?<field_name>"regex")`
+
+`erex` Example:
+
+`| erex new_name examples="example_1", "example_2"`
+
+* Lookups
+
+What is a lookup
+
+* A file - mostly static data, not in an index
+* A tool - Adding additional fields
+
+How to use a Lookup
+
+* Upload the lookup table (contains the data), then set the lookup definition to refrence
+
+Commands:
+
+* Lookup - load results in lookup
+* OUTPUT - overwrite existing arguments
+* OUTPUTNEW - dont overwrite existing arguments 
+* inputlookup - search contents of lookup command
+* outputlookup - write to the lookup table
+
+
+**Module 14A Visulizations**
+
+Types:
+
+* `Tables`
+* `Charts`
+* `Maps`
+
+Commands:
+
+* `timechart` - single or multiseries data, time series will display statistical trends over time 
+* `chart` - line, area, bubble, pie etc. 
+* `stats` - easily alter any stats table
+
+Options:
+
+* `Stacking` - on = events are vertically stacked, off = events are horizontally stacked
+* `Overlay` - add 2 line charts over each other
+* `Trellis` - display multple chats at once
+* `Multiseries` - on = y-axis is split for each value, off = all fields share the y axis
+
+Ways to get visulizations:
+
+* `Pivot` - Build tables and visualizations using multiple fields and metrics without writing searches
+* `Quick Reports` - Click on any field in event tab for a list of quick reports
+* `Search Commands` - Use a transforming command like timechart or stats, to summarize the data.
 
 
 
