@@ -32,6 +32,10 @@ https://quizlet.com/833938908/splunk-core-certified-user-practice-test-2-flash-c
 
 https://regex101.com/
 
+* Whois Lookup
+
+https://whois.domaintools.com
+
 # Keyboard Shortcuts:
 
 `Shift` + `Enter` = A new line 
@@ -962,6 +966,50 @@ What are reports?
 What are Drilldowns?
 
 * Functionality in a dashboard, after you have a search saved to panel you can drilldown on an event. `Tokens` are used for passing variables from panel to panel (setting inputs for users)
+
+**Module 19A Macros**
+
+What is a Macro?
+
+* Saved searches that can run by the macro name 
+
+**Module 20 Workflows**
+
+Workflow actions
+
+* GET - Gets data needed
+* POST - Sending data to an online form
+* Search - runs a secondary search using field values
+
+**Module 21A Data Normlization and Troubleshooting**
+
+* `Field Aliases` - applying 1 or more fields to the same name
+* `Calculated Fields` - assigning a field a new field with a mathmatical equation.
+
+Troubleshooting
+
+Splunk stores it data in buckets
+
+* `Hot` - only writable bucket in Splunk
+* `Warm` - Data is getting older 
+* `Cold` - Data is the oldest 
+
+Job inspector
+
+* Allows you tips to fix SPL
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
