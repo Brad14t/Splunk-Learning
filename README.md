@@ -6,6 +6,16 @@ Notes while learning Splunk for **Splunk Core Certified User**
 
 I am currently studying to take the Splunk Core Certified User exam, but in general I am studying this to improve my skills in Network analytics and potentially get me a job in a SOC enviorment. If anyone is in the same boat, below I am listing all the important things I am looking at daily to study. I will try to provide all the information I am injesting, to hopefully pass the exam and pass this knowlege to the next.
 
+# Contents
+
+**`Materierials Used`** - Every outside link I used while studying for this exam
+
+**`Keyboard Shortcuts`** - List of shortcuts I learned along the way.
+
+**`Splunk Free Learning Course`** - Free Training provided by Splunk 
+
+**`Splunk: Zero to Power User`** - Udemy course by Hailie Shaw
+
 # Material Used
 
 * Splunk Free Learning Course's
@@ -46,7 +56,7 @@ https://whois.domaintools.com
 
 `Ctrl` + `Shift` + `z` = Expanded search (good for macros)
 
-# Splunk Free Learning Course'
+# Splunk Free Learning Course
 
 **Courses:**
 
@@ -998,9 +1008,17 @@ Job inspector
 
 * Allows you tips to fix SPL
 
+**Module 22 Datamodels**
 
+What are datamodels?
 
+* Hierarchical parent and child datasets
 
+Command examples
+
+* `| datamodel` - allows you to search datamodels
+
+* `| tstats`
 
 
 
