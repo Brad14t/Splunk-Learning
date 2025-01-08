@@ -16,6 +16,8 @@ I am currently studying to take the Splunk Core Certified User exam, but in gene
 
 **`Splunk: Zero to Power User`** - Udemy course by Hailie Shaw
 
+**`Missed Practice Exam Questions`** - All these missed questions were from google searching `"SPLK 1001 Practice Exam"` and `Quizlet` exams.
+
 # Material Used
 
 * Splunk Free Learning Course's
@@ -1028,21 +1030,55 @@ What is CIM?
 * CIM is a model and app to refrence a common standard and use and tune the CIM add ons
 
 
+# Missed Practice Exam Questions
+
+These are just missed questions personal to me, but if you study in a similar way these could also assist in filling some gaps.
+
+![1](https://github.com/user-attachments/assets/e2d7dfaa-b6bf-4006-9cb7-9720e0246c82)
+
+**Answer:** `A`
+
+![1](https://github.com/user-attachments/assets/c07c12c0-8426-48c7-ab7d-3d37704a7070)
+
+**Answer:** `A`
+
+![1](https://github.com/user-attachments/assets/f2c78a56-78f6-46f4-b499-921db82b347d)
+
+**Answer:** `A,B,E,G`
+
+![1](https://github.com/user-attachments/assets/f6480e54-53a6-4ab6-be80-0be21a68c7da)
+
+**Answer:** `D`
+
+![1](https://github.com/user-attachments/assets/6cd32f02-8f65-44d4-8a42-9c88e21ed1ae)
+
+**Answer:** `C`
 
 
 
 
 
+# Extra Learnings
 
+Help understanding searching _time commands.
 
+Command:
+WHERE earliest=-5d@w1 AND latest=@w6
 
+Explanation:
+earliest=-5d@w1:
 
+-5d: This refers to 5 days ago from the current time.
+@w1: This snaps the time to the beginning of the first day of the week (Sunday by default in Splunk). For example:
+If today is Thursday, January 11th, 2025, -5d would bring us to Saturday, January 6th, 2025.
+Adding @w1 snaps the time back to Sunday, January 5th, 2025, at midnight (00:00:00).
+So, earliest=-5d@w1 sets the start time of your search to 5 days ago, aligned with the beginning of that week.
 
+latest=@w6:
 
-
-
-
-
+@w6: This snaps the time to the last second of the sixth day of the week (Saturday by default in Splunk). For example:
+If today is Thursday, January 11th, 2025, @w6 would snap to Saturday, January 11th, 2025, at 11:59:59 PM.
+So, latest=@w6 sets the end time of your search to the last second of the current week.
 
 
 
