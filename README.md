@@ -1018,13 +1018,14 @@ Command examples
 
 * `| datamodel` - allows you to search datamodels
 
-* `| tstats`
+* `| tstats` - statistical queries on fields or data models
 
+**Module 25 CIM**
 
+What is CIM?
 
-
-
-
+* Common Information Model
+* CIM is a model and app to refrence a common standard and use and tune the CIM add ons
 
 
 
