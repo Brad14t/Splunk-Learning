@@ -1076,7 +1076,13 @@ These are just missed questions personal to me, but if you study in a similar wa
 
 **Answer:** `C`
 
+![1](https://github.com/user-attachments/assets/970d6091-4fc6-475c-83fd-88b8f9709aa3)
 
+**Answer:** `D`
+
+![1](https://github.com/user-attachments/assets/1a521fc7-6ed6-4786-9e44-a70f1856632f)
+
+**Answer:** `B`
 
 # Extra Learnings
 
