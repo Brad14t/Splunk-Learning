@@ -1054,7 +1054,27 @@ These are just missed questions personal to me, but if you study in a similar wa
 
 **Answer:** `C`
 
+![1](https://github.com/user-attachments/assets/a1394ebe-fe63-4597-b9aa-5fb35f67f5fc)
 
+**Answer:** `B`
+
+![1](https://github.com/user-attachments/assets/96d4cb56-bcdb-4784-9aba-4b4cd700d097)
+
+**Answer:** `B`
+
+![1](https://github.com/user-attachments/assets/d32b0d13-82e1-448a-8df9-c4dc19d08099)
+
+**Answer:** `B`
+
+![1](https://github.com/user-attachments/assets/d2340687-b9ca-45ff-bc4d-e18c77dc0ca2)
+
+![1](https://github.com/user-attachments/assets/bc2763c1-3040-4814-82f2-b95477f5527c)
+
+**Answer:** `C`
+
+![1](https://github.com/user-attachments/assets/9b28b9d8-5ca0-43eb-ba5f-692f754d5d3c)
+
+**Answer:** `C`
 
 
 
